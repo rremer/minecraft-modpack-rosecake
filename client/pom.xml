@@ -55,10 +55,6 @@
                         <id>cloth-config</id>
                         <phase>generate-sources</phase>
                     </execution>
-                    <execution>
-                        <id>better-strongholds</id>
-                        <phase>generate-sources</phase>
-                    </execution>
 
 	            <!-- TODO(rremer) update these 
                     <execution>

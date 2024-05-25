@@ -99,6 +99,39 @@
                         <id>better-strongholds</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>better-dungeons</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-temples</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-desert-temples</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-ocean-monuments</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-nether-fortresses</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-jungle-temples</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-end-island</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>better-witch-huts</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+
 
                     <!-- TODO(rremer) update these
                     <execution>

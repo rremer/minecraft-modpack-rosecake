@@ -129,6 +129,102 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>better-dungeons</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/767/YungsBetterDungeons-1.20.4-Fabric-4.4.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-temples</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-desert-temples</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-ocean-monuments</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/799/YungsBetterOceanMonuments-1.20.4-Fabric-3.4.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-nether-fortresses</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/819/YungsBetterNetherFortresses-1.20.4-Fabric-2.4.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-jungle-temples</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/827/YungsBetterJungleTemples-1.20.4-Fabric-2.4.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-end-island</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5349/834/YungsBetterEndIsland-1.20.4-Fabric-2.4.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>better-witch-huts</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5350/198/YungsBetterWitchHuts-1.20.4-Fabric-3.4.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>cloth-config</id>
                             <goals>
                                 <goal>wget</goal>
