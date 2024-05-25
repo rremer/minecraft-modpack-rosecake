@@ -284,6 +284,18 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+		            <id>moust-tweaks</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5230/279/MouseTweaks-fabric-mc1.20-2.26.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
 
 
 			<!-- TODO(rremer) update these -->

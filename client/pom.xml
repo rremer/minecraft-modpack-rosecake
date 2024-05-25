@@ -67,6 +67,10 @@
                         <id>decorative-blocks</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>mouse-tweaks</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 	            <!-- TODO(rremer) update these 
                     <execution>
