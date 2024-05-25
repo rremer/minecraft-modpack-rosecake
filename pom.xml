@@ -116,6 +116,42 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>better-strongholds</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-fabric/files-->
+				<url>https://mediafilez.forgecdn.net/files/5349/754/YungsBetterStrongholds-1.20.4-Fabric-4.4.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>cloth-config</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/cloth-config/files -->
+				    <url>https://mediafilez.forgecdn.net/files/4973/455/cloth-config-13.0.121-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>yungs-api</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5330/976/YungsApi-1.20.4-Fabric-4.4.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
 
 
 			<!-- TODO(rremer) update these -->
