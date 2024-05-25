@@ -71,6 +71,10 @@
                         <id>mouse-tweaks</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>jade</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 	            <!-- TODO(rremer) update these 
                     <execution>
