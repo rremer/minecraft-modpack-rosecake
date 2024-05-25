@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.rremer</groupId>
+        <artifactId>maven-parent</artifactId>
+        <version>1.0.3</version>
+    </parent>
+
+    <groupId>com.github.rremer</groupId>
+    <artifactId>minecraft-modpack-rosecake</artifactId>
+    <version>1.18.1-3-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Minecraft Modpack Rosecake</name>
+    <description>A Fabric/datapack vanilla-substitute of Minecraft</description>
+
+    <modules>
+        <module>server</module>
+        <module>client</module>
+        <module>datapack-recipes</module>
+        <module>datapack-gamerules</module>
+        <module>image</module>
+    </modules>
+
+    <properties>
+        <github.project>minecraft-modpack-rosecake</github.project>
+        <github.site.location>${project.version}</github.site.location>
+        <github.site.url>https://${github.owner}.github.io/${github.project}</github.site.url>
+        <parameter.disable.semantic.versioning>true</parameter.disable.semantic.versioning>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <scm.url>https://github.com/${github.owner}/${github.project}</scm.url>
+
+        <url.fabric.installer>https://maven.fabricmc.net/net/fabricmc/fabric-installer/${version.fabric.installer}/fabric-installer-${version.fabric.installer}.jar</url.fabric.installer>
+        <url.fabric.installerName>fabric-installer.jar</url.fabric.installerName>
+        <url.mods.target>${project.build.directory}/mods</url.mods.target>
+        <url.resourcepacks.target>${project.build.directory}/resourcepacks</url.resourcepacks.target>
+        <url.shaderpacks.target>${project.build.directory}/shaderpacks</url.shaderpacks.target>
+
+        <version.download-maven-plugin>1.5.0</version.download-maven-plugin>
+        <version.exec-maven-plugin>1.6.0</version.exec-maven-plugin>
+        <version.fabric.installer>1.0.1</version.fabric.installer>
+        <version.fabric.loader>0.15.11</version.fabric.loader>
+        <version.minecraft>1.20.4</version.minecraft>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.googlecode.maven-download-plugin</groupId>
+                    <artifactId>download-maven-plugin</artifactId>
+                    <version>${version.download-maven-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>fabric-installer</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <url>${url.fabric.installer}</url>
+                                <outputDirectory>${url.installer.target}</outputDirectory>
+                                <outputFileName>${url.fabric.installerName}</outputFileName>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>fabric-api</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- crystallib (dep of towns-and-towers) requires fabric-api for 1.20.4, cannot use 1.20.6+ -->
+				<!-- https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?filter-game-version= -->
+				<url>https://mediafilez.forgecdn.net/files/5253/510/fabric-api-0.97.0%2B1.20.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>towns-and-towers</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/towns-and-towers/files -->
+				<url>https://mediafilez.forgecdn.net/files/5202/852/t_and_t-1.12.1.1.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>crystallib</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/cristel-lib/files -->
+				<!-- required by at least towns-and-towers -->
+				<url>https://mediafilez.forgecdn.net/files/5092/563/cristellib-1.2.4-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>when-dungeons-arise</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-fabric/files/all?page=1&pageSize=20> -->
+		                <url>https://mediafilez.forgecdn.net/files/4983/906/DungeonsArise-1.20.x-2.1.58-fabric-release.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+
+
+			<!-- TODO(rremer) update these -->
+                        <execution>
+                            <id>fast-leaf-decay</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/files -->
+				<url>https://media.forgecdn.net/files/3825/829/FastLeafDecay-29.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>lithium</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/lithium/files -->
+				<url>https://media.forgecdn.net/files/3825/272/lithium-fabric-mc1.19-0.8.0.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>iris-sodium</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://github.com/CaffeineMC/sodium-fabric/releases -->
+				<url>https://github.com/CaffeineMC/sodium-fabric/releases/download/mc1.19-0.4.2/sodium-fabric-mc1.19-0.4.2+build.16.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>iris</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/irisshaders/files -->
+				<url>https://media.forgecdn.net/files/3821/21/iris-mc1.19-1.2.5.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>shaderpacks-complementary</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
+				<url>https://media.forgecdn.net/files/3826/772/ComplementaryShaders_v4.5.zip</url>
+                                <outputDirectory>${url.shaderpacks.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>rei-architectury</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/architectury-api/files -->
+				<url>https://media.forgecdn.net/files/3834/396/architectury-5.7.27-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>rei</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+			        <!-- https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files/all?filter-game-version=2020709689%3A7499 -->
+				<url>https://media.forgecdn.net/files/3836/158/RoughlyEnoughItems-9.0.491.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>rer</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/roughly-enough-resources/files -->
+				<url>https://media.forgecdn.net/files/3837/336/rer-2.6.0.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>backup</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/textile-backup/files -->
+				<url>https://media.forgecdn.net/files/3542/373/textile_backup-2.3.0-1.18.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${version.exec-maven-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>fabric-installer</id>
+                            <goals>
+                                <goal>exec</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <executable>java</executable>
+                                <workingDirectory>${url.installer.target}</workingDirectory>
+                                <environmentVariables></environmentVariables>
+                                <arguments>
+                                    <argument>-jar</argument>
+                                    <argument>${url.fabric.installerName}</argument>
+                                    <argument>${parameter.fabric.installer.mode}</argument>
+                                    <argument>-dir</argument>
+                                    <argument>${url.installer.target}</argument>
+                                    <argument>-downloadMinecraft</argument>
+                                    <argument>-snapshot</argument>
+                                    <argument>-mcversion</argument>
+                                    <argument>${version.minecraft}</argument>
+                                    <argument>-noprofile</argument>
+                                    <argument>-loader</argument>
+                                    <argument>${version.fabric.loader}</argument>
+                                </arguments>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <url>${github.site.url}/${github.site.location}</url>
+
+    <organization>
+        <name>Royce Remer</name>
+        <url>https://github.com/rremer/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>rremer</id>
+            <email>royceremer@gmail.com</email>
+            <timezone>America/Los_Angeles</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git:${scm.url}.git</connection>
+        <developerConnection>scm:git:git:${scm.url}.git</developerConnection>
+        <url>${scm.url}</url>
+    </scm>
+
+    <issueManagement>
+        <system>Github Issues</system>
+        <url>${scm.url}/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>travis</system>
+        <url>https://travis-ci.org/rremer/minecraft-modpack-rosecake</url>
+    </ciManagement>
+
+</project>

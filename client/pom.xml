@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.rremer</groupId>
+        <artifactId>minecraft-modpack-rosecake</artifactId>
+        <version>1.18.1-3-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.rremer</groupId>
+    <artifactId>minecraft-modpack-rosecake-client</artifactId>
+    <version>1.18.1-3-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Minecraft Modpack Rosecake Client</name>
+    <description>Client for a vanilla-substitute of Minecraft.</description>
+
+    <properties>
+        <github.site.location>${project.version}/${project.artifactId}</github.site.location>
+        <parameter.fabric.installer.mode>client</parameter.fabric.installer.mode>
+        <url.installer.target>${project.build.directory}/client</url.installer.target>
+        <version.lwjgl>3.2.2</version.lwjgl>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>src/main/resources/filtered</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>fabric-api</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>towns-and-towers</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>crystallib</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+
+	            <!-- TODO(rremer) update these 
+                    <execution>
+                        <id>iris-sodium</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>iris</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>shaderpacks-complementary</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+		    -->
+                    <execution>
+                        <id>fabric-installer</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+
+
+		    <!-- TODO(rremer) cleanup
+                    <execution>
+                        <id>rei-architectury</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>rei</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>rer</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>cloth-config</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>patchouli</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+		    -->
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>server</id>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <descriptor>src/assembly/client-mmc.xml</descriptor>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>fabric-installer</id>
+                        <phase>compile</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <url>${github.site.url}/${github.site.location}</url>
+
+    <organization>
+        <name>Royce Remer</name>
+        <url>https://github.com/rremer/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>rremer</id>
+            <email>royceremer@gmail.com</email>
+            <timezone>America/Los_Angeles</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git:${scm.url}.git</connection>
+        <developerConnection>scm:git:git:${scm.url}.git</developerConnection>
+        <url>${scm.url}</url>
+    </scm>
+
+    <issueManagement>
+        <system>Github Issues</system>
+        <url>${scm.url}/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>travis</system>
+        <url>https://travis-ci.org/rremer/minecraft-modpack-rosecake</url>
+    </ciManagement>
+
+</project>
