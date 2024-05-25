@@ -139,6 +139,10 @@
                         <id>just-enough-resources</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>decorative-blocks</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 
                     <!-- TODO(rremer) update these

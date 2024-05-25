@@ -272,6 +272,18 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>decorative-blocks</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/decorative-blocks/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5089/415/Decorative%20Blocks-Fabric-1.20.4-5.0.2.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
 
 
 			<!-- TODO(rremer) update these -->
