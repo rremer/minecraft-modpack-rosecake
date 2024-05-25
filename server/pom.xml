@@ -131,6 +131,14 @@
                         <id>better-witch-huts</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>just-enough-items</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>just-enough-resources</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 
                     <!-- TODO(rremer) update these

@@ -248,6 +248,30 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>just-enough-items</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/jei/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5305/373/jei-1.20.4-fabric-17.3.0.51.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>just-enough-resources</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5057/223/JustEnoughResources-Fabric-1.20.1-1.4.0.247.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
 
 
 			<!-- TODO(rremer) update these -->
@@ -309,42 +333,6 @@
 				<!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
 				<url>https://media.forgecdn.net/files/3826/772/ComplementaryShaders_v4.5.zip</url>
                                 <outputDirectory>${url.shaderpacks.target}</outputDirectory>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>rei-architectury</id>
-                            <goals>
-                                <goal>wget</goal>
-                            </goals>
-                            <phase>none</phase>
-                            <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/architectury-api/files -->
-				<url>https://media.forgecdn.net/files/3834/396/architectury-5.7.27-fabric.jar</url>
-                                <outputDirectory>${url.mods.target}</outputDirectory>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>rei</id>
-                            <goals>
-                                <goal>wget</goal>
-                            </goals>
-                            <phase>none</phase>
-                            <configuration>
-			        <!-- https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files/all?filter-game-version=2020709689%3A7499 -->
-				<url>https://media.forgecdn.net/files/3836/158/RoughlyEnoughItems-9.0.491.jar</url>
-                                <outputDirectory>${url.mods.target}</outputDirectory>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>rer</id>
-                            <goals>
-                                <goal>wget</goal>
-                            </goals>
-                            <phase>none</phase>
-                            <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/roughly-enough-resources/files -->
-				<url>https://media.forgecdn.net/files/3837/336/rer-2.6.0.jar</url>
-                                <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
                         <execution>
