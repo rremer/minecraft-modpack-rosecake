@@ -1,8 +1,8 @@
 # minecraft-modpack-rosecake
 
 [![Build Status](https://img.shields.io/travis/rremer/minecraft-modpack-rosecake/master)](https://travis-ci.org/github/rremer/minecraft-modpack-rosecake)
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.rremer/minecraft-modpack-rosecake?versionPrefix=1.20.6-1)](https://search.maven.org/artifact/com.github.rremer/minecraft-modpack-rosecake-client/1.20.6-1/jar)
-[![Docker Tag](https://img.shields.io/docker/v/rremer/minecraft-modpack-rosecake/1.20.6-1?label=docker)](https://hub.docker.com/repository/docker/rremer/minecraft-modpack-rosecake/general)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.rremer/minecraft-modpack-rosecake?versionPrefix=1.20.4-1)](https://search.maven.org/artifact/com.github.rremer/minecraft-modpack-rosecake-client/1.20.4-1/jar)
+[![Docker Tag](https://img.shields.io/docker/v/rremer/minecraft-modpack-rosecake/1.20.4-1?label=docker)](https://hub.docker.com/repository/docker/rremer/minecraft-modpack-rosecake/general)
 [![License](https://img.shields.io/github/license/rremer/minecraft-modpack-rosecake)](https://opensource.org/licenses/MIT)
 [![Keybase PGP](https://img.shields.io/keybase/pgp/rremer)](https://keybase.io/rremer/pgp_keys.asc)
 
@@ -16,8 +16,8 @@ Currently, this modpack is distributed as a [MultiMC] zip.
 2. [Download MultiMC] and install.
 3. Open MultiMC and and add login credentials
 4. Click "Add Instance" and select "Import from zip" on the left-hand side.
-5. Paste in this URL: [MMC client release 1.20.6-1] and hit <Enter> 
-6. When the download finishes, double-click 'minecraft-modpack-rosecake-client-1.20.6-1.zip'
+5. Paste in this URL: [MMC client release 1.20.4-1] and hit <Enter> 
+6. When the download finishes, double-click 'minecraft-modpack-rosecake-client-1.20.4-1.zip'
 7. If you are not signed into a Mojang account, you will be promted for credentials
 
 ## Features
@@ -68,7 +68,7 @@ docker run -d \
   -e EULA_MINECRAFT_BOOL=true \
   -v /path/to/persistent/world:/minecraft-modpack-rosecake/.minecraft/world \
   -v /path/to/persistent/backup:/minecraft-modpack-rosecake/.minecraft/backup \
-  rremer/minecraft-modpack-rosecake:1.20.6-1
+  rremer/minecraft-modpack-rosecake:1.20.4-1
 ```
 ... where ```/path/to/persistent``` is some real local filesystem to persist the world data between container restarts.
 
@@ -76,7 +76,7 @@ docker run -d \
 ## Releasing
 
 ```sh
-mvn versions:set -DnewVersion=1.20.6-1
+mvn versions:set -DnewVersion=1.20.4-1
 mvn clean deploy -Dparameter.gpg.skip=false
 mvn site site-deploy
 ```
@@ -89,5 +89,5 @@ A version number of this project's artifacts is built as ```<minecraft.version>-
 
 [MultiMC]:https://multimc.org/
 [Download MultiMC]:https://multimc.org/#Download
-[MMC client release 1.20.6-1]:https://repo.maven.apache.org/maven2/com/github/rremer/minecraft-modpack-rosecake-client/1.20.6-1/minecraft-modpack-rosecake-client-1.20.6-1.zip
+[MMC client release 1.20.4-1]:https://repo.maven.apache.org/maven2/com/github/rremer/minecraft-modpack-rosecake-client/1.20.4-1/minecraft-modpack-rosecake-client-1.20.4-1.zip
 [docker.io/rremer/minecraft-modpack-rosecake]:https://hub.docker.com/r/rremer/minecraft-modpack-rosecake/tags
