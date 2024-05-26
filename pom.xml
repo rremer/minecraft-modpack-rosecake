@@ -105,18 +105,6 @@
                             </configuration>
                         </execution>
                         <execution>
-                            <id>when-dungeons-arise</id>
-                            <goals>
-                                <goal>wget</goal>
-                            </goals>
-                            <phase>none</phase>
-                            <configuration>
-                                <!-- https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-fabric/files/all?page=1&pageSize=20> -->
-                                <url>https://mediafilez.forgecdn.net/files/4983/906/DungeonsArise-1.20.x-2.1.58-fabric-release.jar</url>
-                                <outputDirectory>${url.mods.target}</outputDirectory>
-                            </configuration>
-                        </execution>
-                        <execution>
                             <id>better-strongholds</id>
                             <goals>
                                 <goal>wget</goal>
