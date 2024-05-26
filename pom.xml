@@ -365,7 +365,7 @@
                             <phase>none</phase>
                             <configuration>
 				<!-- https://github.com/CaffeineMC/sodium-fabric/releases -->
-				    <url>https://github.com/CaffeineMC/sodium-fabric/releases/download/mc1.20.3-0.5.5/sodium-fabric-mc1.20.3-0.5.5.jar</url>
+				    <url>https://mediafilez.forgecdn.net/files/5092/261/sodium-fabric-0.5.8%2Bmc1.20.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
