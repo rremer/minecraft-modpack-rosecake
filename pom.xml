@@ -73,9 +73,9 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- crystallib (dep of towns-and-towers) requires fabric-api for 1.20.4, cannot use 1.20.6+ -->
-				<!-- https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?filter-game-version= -->
-				<url>https://mediafilez.forgecdn.net/files/5253/510/fabric-api-0.97.0%2B1.20.4.jar</url>
+                                <!-- crystallib (dep of towns-and-towers) requires fabric-api for 1.20.4, cannot use 1.20.6+ -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?filter-game-version= -->
+                                <url>https://mediafilez.forgecdn.net/files/5253/510/fabric-api-0.97.0%2B1.20.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -86,8 +86,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/towns-and-towers/files -->
-				<url>https://mediafilez.forgecdn.net/files/5202/852/t_and_t-1.12.1.1.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/towns-and-towers/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5202/852/t_and_t-1.12.1.1.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -98,9 +98,9 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/cristel-lib/files -->
-				<!-- required by at least towns-and-towers -->
-				<url>https://mediafilez.forgecdn.net/files/5092/563/cristellib-1.2.4-fabric.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/cristel-lib/files -->
+                                <!-- required by at least towns-and-towers -->
+                                <url>https://mediafilez.forgecdn.net/files/5092/563/cristellib-1.2.4-fabric.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -111,8 +111,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-fabric/files/all?page=1&pageSize=20> -->
-		                <url>https://mediafilez.forgecdn.net/files/4983/906/DungeonsArise-1.20.x-2.1.58-fabric-release.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-fabric/files/all?page=1&pageSize=20> -->
+                                <url>https://mediafilez.forgecdn.net/files/4983/906/DungeonsArise-1.20.x-2.1.58-fabric-release.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -123,8 +123,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-fabric/files-->
-				<url>https://mediafilez.forgecdn.net/files/5349/754/YungsBetterStrongholds-1.20.4-Fabric-4.4.3.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-fabric/files-->
+                                <url>https://mediafilez.forgecdn.net/files/5349/754/YungsBetterStrongholds-1.20.4-Fabric-4.4.3.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -135,8 +135,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/767/YungsBetterDungeons-1.20.4-Fabric-4.4.4.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/767/YungsBetterDungeons-1.20.4-Fabric-4.4.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -147,8 +147,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -159,8 +159,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/786/YungsBetterDesertTemples-1.20.4-Fabric-3.4.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -171,8 +171,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/799/YungsBetterOceanMonuments-1.20.4-Fabric-3.4.3.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/799/YungsBetterOceanMonuments-1.20.4-Fabric-3.4.3.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -183,8 +183,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/819/YungsBetterNetherFortresses-1.20.4-Fabric-2.4.4.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/819/YungsBetterNetherFortresses-1.20.4-Fabric-2.4.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -195,8 +195,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/827/YungsBetterJungleTemples-1.20.4-Fabric-2.4.4.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/827/YungsBetterJungleTemples-1.20.4-Fabric-2.4.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -207,8 +207,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5349/834/YungsBetterEndIsland-1.20.4-Fabric-2.4.3.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5349/834/YungsBetterEndIsland-1.20.4-Fabric-2.4.3.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -219,8 +219,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5350/198/YungsBetterWitchHuts-1.20.4-Fabric-3.4.3.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5350/198/YungsBetterWitchHuts-1.20.4-Fabric-3.4.3.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -231,8 +231,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/cloth-config/files -->
-				    <url>https://mediafilez.forgecdn.net/files/4973/455/cloth-config-13.0.121-fabric.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/cloth-config/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4973/455/cloth-config-13.0.121-fabric.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -243,8 +243,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5330/976/YungsApi-1.20.4-Fabric-4.4.3.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5330/976/YungsApi-1.20.4-Fabric-4.4.3.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -255,8 +255,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/jei/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5305/373/jei-1.20.4-fabric-17.3.0.51.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/jei/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5305/373/jei-1.20.4-fabric-17.3.0.51.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -267,8 +267,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5057/223/JustEnoughResources-Fabric-1.20.1-1.4.0.247.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5057/223/JustEnoughResources-Fabric-1.20.1-1.4.0.247.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -279,32 +279,32 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/decorative-blocks/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5089/415/Decorative%20Blocks-Fabric-1.20.4-5.0.2.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/decorative-blocks/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5089/415/Decorative%20Blocks-Fabric-1.20.4-5.0.2.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
                         <execution>
-		            <id>moust-tweaks</id>
+                            <id>moust-tweaks</id>
                             <goals>
                                 <goal>wget</goal>
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5230/279/MouseTweaks-fabric-mc1.20-2.26.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5230/279/MouseTweaks-fabric-mc1.20-2.26.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
                         <execution>
-		            <id>jade</id>
+                            <id>jade</id>
                             <goals>
                                 <goal>wget</goal>
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/jade/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5111/964/Jade-1.20.4-fabric-13.3.1.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/jade/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5111/964/Jade-1.20.4-fabric-13.3.1.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -315,8 +315,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files -->
-				    <url>https://mediafilez.forgecdn.net/files/4990/598/accelerated-decay-fabric-84.0.0.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4990/598/accelerated-decay-fabric-84.0.0.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -327,9 +327,9 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				    <!-- required by at least accelerated-leaf-decay -->
-				    <!-- https://www.curseforge.com/minecraft/mc-mods/architectury-api/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5173/988/architectury-11.1.17-fabric.jar</url>
+                                <!-- required by at least accelerated-leaf-decay -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/architectury-api/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5173/988/architectury-11.1.17-fabric.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -340,8 +340,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/textile-backup/files -->
-				    <url>https://mediafilez.forgecdn.net/files/4975/972/textile_backup-3.1.3-1.20.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/textile-backup/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4975/972/textile_backup-3.1.3-1.20.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -352,8 +352,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/lithium/files -->
-				    <url>https://mediafilez.forgecdn.net/files/4972/281/lithium-fabric-mc1.20.4-0.12.1.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/lithium/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4972/281/lithium-fabric-mc1.20.4-0.12.1.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -364,8 +364,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://github.com/CaffeineMC/sodium-fabric/releases -->
-				    <url>https://mediafilez.forgecdn.net/files/5092/261/sodium-fabric-0.5.8%2Bmc1.20.4.jar</url>
+                                <!-- https://github.com/CaffeineMC/sodium-fabric/releases -->
+                                <url>https://mediafilez.forgecdn.net/files/5092/261/sodium-fabric-0.5.8%2Bmc1.20.4.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -376,13 +376,13 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/irisshaders/files -->
-				    <url>https://mediafilez.forgecdn.net/files/5095/1/iris-mc1.20.4-1.6.17.jar</url>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/irisshaders/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5095/1/iris-mc1.20.4-1.6.17.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
 
-			<!-- TODO(rremer) update these -->
+                        <!-- TODO(rremer) update these -->
                         <execution>
                             <id>shaderpacks-complementary</id>
                             <goals>
@@ -390,8 +390,8 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
-				    <url>https://mediafilez.forgecdn.net/files/4913/943/ComplementaryUnbound_r5.1.1.zip</url>
+                                <!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4913/943/ComplementaryUnbound_r5.1.1.zip</url>
                                 <outputDirectory>${url.shaderpacks.target}</outputDirectory>
                             </configuration>
                         </execution>

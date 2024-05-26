@@ -42,7 +42,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${version.docker-maven-plugin}</version>
                 <configuration>
-	            <showLogs>true</showLogs>
+                    <showLogs>true</showLogs>
                     <images>
                         <image>
                             <name>${image.tag.target}</name>

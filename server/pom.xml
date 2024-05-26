@@ -148,7 +148,7 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
-			<id>architectury-api</id>
+                        <id>architectury-api</id>
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
