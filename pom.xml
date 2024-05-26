@@ -308,21 +308,34 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
-
-
-			<!-- TODO(rremer) update these -->
                         <execution>
-                            <id>fast-leaf-decay</id>
+                            <id>accelerated-leaf-decay</id>
                             <goals>
                                 <goal>wget</goal>
                             </goals>
                             <phase>none</phase>
                             <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay/files -->
-				<url>https://media.forgecdn.net/files/3825/829/FastLeafDecay-29.jar</url>
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files -->
+				    <url>https://mediafilez.forgecdn.net/files/4990/598/accelerated-decay-fabric-84.0.0.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>architectury-api</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				    <!-- required by at least accelerated-leaf-decay -->
+				    <!-- https://www.curseforge.com/minecraft/mc-mods/architectury-api/files -->
+				    <url>https://mediafilez.forgecdn.net/files/5173/988/architectury-11.1.17-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+
+
+			<!-- TODO(rremer) update these -->
                         <execution>
                             <id>lithium</id>
                             <goals>

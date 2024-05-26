@@ -143,6 +143,14 @@
                         <id>decorative-blocks</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>accelerated-leaf-decay</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+			<id>architectury-api</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 
                     <!-- TODO(rremer) update these
