@@ -333,6 +333,18 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>backup</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/textile-backup/files -->
+				    <url>https://mediafilez.forgecdn.net/files/4975/972/textile_backup-3.1.3-1.20.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
 
 
 			<!-- TODO(rremer) update these -->
@@ -382,18 +394,6 @@
 				<!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
 				<url>https://media.forgecdn.net/files/3826/772/ComplementaryShaders_v4.5.zip</url>
                                 <outputDirectory>${url.shaderpacks.target}</outputDirectory>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>backup</id>
-                            <goals>
-                                <goal>wget</goal>
-                            </goals>
-                            <phase>none</phase>
-                            <configuration>
-				<!-- https://www.curseforge.com/minecraft/mc-mods/textile-backup/files -->
-				<url>https://media.forgecdn.net/files/3542/373/textile_backup-2.3.0-1.18.jar</url>
-                                <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
                     </executions>

@@ -151,15 +151,15 @@
 			<id>architectury-api</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <id>backup</id>
+                        <phase>generate-sources</phase>
+                    </execution>
 
 
                     <!-- TODO(rremer) update these
                     <execution>
                         <id>lithium</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>backup</id>
                         <phase>generate-sources</phase>
                     </execution>
 		    -->
