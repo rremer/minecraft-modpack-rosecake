@@ -273,6 +273,19 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>configured</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- required by at least just-enough-resources for client-side configurition via menus -->
+				<!-- https://www.curseforge.com/minecraft/mc-mods/configured/files -->
+				<url>https://mediafilez.forgecdn.net/files/5105/23/configured-fabric-1.20.4-2.2.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>decorative-blocks</id>
                             <goals>
                                 <goal>wget</goal>

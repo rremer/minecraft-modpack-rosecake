@@ -64,6 +64,10 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
+                        <id>configured</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
                         <id>decorative-blocks</id>
                         <phase>generate-sources</phase>
                     </execution>
