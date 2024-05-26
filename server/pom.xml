@@ -155,29 +155,10 @@
                         <id>backup</id>
                         <phase>generate-sources</phase>
                     </execution>
-
-
-                    <!-- TODO(rremer) update these
                     <execution>
                         <id>lithium</id>
                         <phase>generate-sources</phase>
                     </execution>
-		    -->
-
-                    <!-- TODO(rremer) cleanup
-                    <execution>
-                        <id>rei-architectury</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>rei</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>rer</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-		    -->
                 </executions>
             </plugin>
             <plugin>

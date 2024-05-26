@@ -75,8 +75,6 @@
                         <id>jade</id>
                         <phase>generate-sources</phase>
                     </execution>
-
-	            <!-- TODO(rremer) update these 
                     <execution>
                         <id>iris-sodium</id>
                         <phase>generate-sources</phase>
@@ -89,35 +87,10 @@
                         <id>shaderpacks-complementary</id>
                         <phase>generate-sources</phase>
                     </execution>
-		    -->
                     <execution>
                         <id>fabric-installer</id>
                         <phase>generate-sources</phase>
                     </execution>
-
-
-		    <!-- TODO(rremer) cleanup
-                    <execution>
-                        <id>rei-architectury</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>rei</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>rer</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>cloth-config</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-                    <execution>
-                        <id>patchouli</id>
-                        <phase>generate-sources</phase>
-                    </execution>
-		    -->
                 </executions>
             </plugin>
             <plugin>

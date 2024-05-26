@@ -345,9 +345,6 @@
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
-
-
-			<!-- TODO(rremer) update these -->
                         <execution>
                             <id>lithium</id>
                             <goals>
@@ -356,7 +353,7 @@
                             <phase>none</phase>
                             <configuration>
 				<!-- https://www.curseforge.com/minecraft/mc-mods/lithium/files -->
-				<url>https://media.forgecdn.net/files/3825/272/lithium-fabric-mc1.19-0.8.0.jar</url>
+				    <url>https://mediafilez.forgecdn.net/files/4972/281/lithium-fabric-mc1.20.4-0.12.1.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -368,7 +365,7 @@
                             <phase>none</phase>
                             <configuration>
 				<!-- https://github.com/CaffeineMC/sodium-fabric/releases -->
-				<url>https://github.com/CaffeineMC/sodium-fabric/releases/download/mc1.19-0.4.2/sodium-fabric-mc1.19-0.4.2+build.16.jar</url>
+				    <url>https://github.com/CaffeineMC/sodium-fabric/releases/download/mc1.20.3-0.5.5/sodium-fabric-mc1.20.3-0.5.5.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
@@ -380,10 +377,12 @@
                             <phase>none</phase>
                             <configuration>
 				<!-- https://www.curseforge.com/minecraft/mc-mods/irisshaders/files -->
-				<url>https://media.forgecdn.net/files/3821/21/iris-mc1.19-1.2.5.jar</url>
+				    <url>https://mediafilez.forgecdn.net/files/5095/1/iris-mc1.20.4-1.6.17.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>
+
+			<!-- TODO(rremer) update these -->
                         <execution>
                             <id>shaderpacks-complementary</id>
                             <goals>
@@ -392,7 +391,7 @@
                             <phase>none</phase>
                             <configuration>
 				<!-- https://www.curseforge.com/minecraft/customization/complementary-shaders/files -->
-				<url>https://media.forgecdn.net/files/3826/772/ComplementaryShaders_v4.5.zip</url>
+				    <url>https://mediafilez.forgecdn.net/files/4913/943/ComplementaryUnbound_r5.1.1.zip</url>
                                 <outputDirectory>${url.shaderpacks.target}</outputDirectory>
                             </configuration>
                         </execution>
