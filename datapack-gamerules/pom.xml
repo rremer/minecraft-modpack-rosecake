@@ -17,6 +17,53 @@
     <description>Datapack of gamerule overrides for a vanilla-substitute of Minecraft.</description>
 
     <properties>
+
+        <gamerule.announceAdvancements>true</gamerule.announceAdvancements>
+        <gamerule.commandBlockOutput>true</gamerule.commandBlockOutput>
+        <gamerule.disableElytraMovementCheck>true</gamerule.disableElytraMovementCheck>
+        <gamerule.disableRaids>false</gamerule.disableRaids>
+        <gamerule.doDaylightCycle>true</gamerule.doDaylightCycle>
+        <gamerule.doEntityDrops>true</gamerule.doEntityDrops>
+        <gamerule.doFireTick>true</gamerule.doFireTick>
+        <gamerule.doImmediateRespawn>false</gamerule.doImmediateRespawn>
+        <gamerule.doInsomnia>false</gamerule.doInsomnia>
+        <gamerule.doLimitedCrafting>false</gamerule.doLimitedCrafting>
+        <gamerule.doMobLoot>true</gamerule.doMobLoot>
+        <gamerule.doMobSpawning>true</gamerule.doMobSpawning>
+        <gamerule.doPatrolSpawning>true</gamerule.doPatrolSpawning>
+        <gamerule.doTileDrops>true</gamerule.doTileDrops>
+        <gamerule.doTraderSpawning>true</gamerule.doTraderSpawning>
+        <gamerule.doWeatherCycle>true</gamerule.doWeatherCycle>
+        <gamerule.drowningDamage>true</gamerule.drowningDamage>
+        <gamerule.fallDamage>true</gamerule.fallDamage>
+        <gamerule.fireDamage>true</gamerule.fireDamage>
+        <gamerule.forgiveDeadPlayers>true</gamerule.forgiveDeadPlayers>
+        <gamerule.keepInventory>true</gamerule.keepInventory>
+        <gamerule.logAdminCommands>true</gamerule.logAdminCommands>
+        <gamerule.maxCommandChainLength>65536</gamerule.maxCommandChainLength>
+        <gamerule.maxEntityCramming>24</gamerule.maxEntityCramming>
+        <gamerule.mobGriefing>true</gamerule.mobGriefing>
+        <gamerule.naturalRegeneration>true</gamerule.naturalRegeneration>
+        <gamerule.randomTickSpeed>3</gamerule.randomTickSpeed>
+        <gamerule.reducedDebugInfo>false</gamerule.reducedDebugInfo>
+        <gamerule.sendCommandFeedback>true</gamerule.sendCommandFeedback>
+        <gamerule.showDeathMessages>true</gamerule.showDeathMessages>
+        <gamerule.spawnRadius>10</gamerule.spawnRadius>
+        <gamerule.spectatorsGenerateChunks>true</gamerule.spectatorsGenerateChunks>
+        <gamerule.universalAnger>false</gamerule.universalAnger>
+	<gamerule.blockExplosionDropDecay>true</gamerule.blockExplosionDropDecay>
+	<gamerule.doVinesSpread>true</gamerule.doVinesSpread>
+	<gamerule.doWardenSpawning>true</gamerule.doWardenSpawning>
+	<gamerule.enderPearlsVanishOnDeath>true</gamerule.enderPearlsVanishOnDeath>
+	<gamerule.freezeDamage>true</gamerule.freezeDamage>
+	<gamerule.globalSoundEvents>true</gamerule.globalSoundEvents>
+	<gamerule.lavaSourceConversion>false</gamerule.lavaSourceConversion>
+	<gamerule.mobExplosionDropDecay>true</gamerule.mobExplosionDropDecay>
+	<gamerule.playersSleepingPercentage>25</gamerule.playersSleepingPercentage>
+	<gamerule.snowAccumulationHeight>1</gamerule.snowAccumulationHeight>
+	<gamerule.tntExplosionDropDecay>false</gamerule.tntExplosionDropDecay>
+	<gamerule.waterSourceConversion>true</gamerule.waterSourceConversion>
+
         <github.site.location>${project.version}/${project.artifactId}</github.site.location>
         <mcmeta.description>${project.description}</mcmeta.description>
         <mcmeta.pack_format>15</mcmeta.pack_format>
