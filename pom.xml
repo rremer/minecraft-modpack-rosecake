@@ -105,6 +105,44 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>biomes-o-plenty</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5300/401/BiomesOPlenty-fabric-1.20.4-19.0.0.89.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>glitchcore</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- required by at least biomes-o-plenty -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/glitchcore/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5088/443/GlitchCore-fabric-1.20.4-1.0.0.59.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>terrablender</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- required by at least biomes-o-plenty -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/terrablender-fabric/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5068/224/TerraBlender-fabric-1.20.4-3.3.0.12.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>better-strongholds</id>
                             <goals>
                                 <goal>wget</goal>
