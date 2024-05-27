@@ -310,6 +310,31 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>waystones</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+				<!-- https://www.curseforge.com/minecraft/mc-mods/waystones-fabric/files -->
+				<url>https://mediafilez.forgecdn.net/files/5263/478/waystones-fabric-1.20.4-16.0.5.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>balm-fabric</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- required by at least waystones -->
+				<!-- https://www.curseforge.com/minecraft/mc-mods/balm-fabric/files -->
+				<url>https://mediafilez.forgecdn.net/files/5327/674/balm-fabric-1.20.4-9.0.9.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>accelerated-leaf-decay</id>
                             <goals>
                                 <goal>wget</goal>

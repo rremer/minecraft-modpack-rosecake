@@ -68,6 +68,14 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
+                        <id>waystones</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>balm-fabric</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
                         <id>mouse-tweaks</id>
                         <phase>generate-sources</phase>
                     </execution>

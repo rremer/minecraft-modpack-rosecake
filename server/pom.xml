@@ -20,7 +20,7 @@
         <github.site.location>${project.version}/${project.artifactId}</github.site.location>
         <minecraft.allow-flight>true</minecraft.allow-flight>
         <minecraft.difficulty>hard</minecraft.difficulty>
-        <minecraft.level-seed></minecraft.level-seed>
+        <minecraft.level-seed>1920597807115725671</minecraft.level-seed>
         <minecraft.message-of-the-day></minecraft.message-of-the-day>
         <minecraft.snooper-enabled>true</minecraft.snooper-enabled>
 
@@ -137,6 +137,14 @@
                     </execution>
                     <execution>
                         <id>configured</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>waystones</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>balm-fabric</id>
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>

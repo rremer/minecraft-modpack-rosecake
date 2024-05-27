@@ -19,6 +19,7 @@
     <properties>
 
         <gamerule.announceAdvancements>true</gamerule.announceAdvancements>
+        <gamerule.blockExplosionDropDecay>true</gamerule.blockExplosionDropDecay>
         <gamerule.commandBlockOutput>true</gamerule.commandBlockOutput>
         <gamerule.disableElytraMovementCheck>true</gamerule.disableElytraMovementCheck>
         <gamerule.disableRaids>false</gamerule.disableRaids>
@@ -33,36 +34,35 @@
         <gamerule.doPatrolSpawning>true</gamerule.doPatrolSpawning>
         <gamerule.doTileDrops>true</gamerule.doTileDrops>
         <gamerule.doTraderSpawning>true</gamerule.doTraderSpawning>
+        <gamerule.doVinesSpread>true</gamerule.doVinesSpread>
+        <gamerule.doWardenSpawning>true</gamerule.doWardenSpawning>
         <gamerule.doWeatherCycle>true</gamerule.doWeatherCycle>
         <gamerule.drowningDamage>true</gamerule.drowningDamage>
+        <gamerule.enderPearlsVanishOnDeath>true</gamerule.enderPearlsVanishOnDeath>
         <gamerule.fallDamage>true</gamerule.fallDamage>
         <gamerule.fireDamage>true</gamerule.fireDamage>
         <gamerule.forgiveDeadPlayers>true</gamerule.forgiveDeadPlayers>
+        <gamerule.freezeDamage>true</gamerule.freezeDamage>
+        <gamerule.globalSoundEvents>true</gamerule.globalSoundEvents>
         <gamerule.keepInventory>true</gamerule.keepInventory>
+        <gamerule.lavaSourceConversion>false</gamerule.lavaSourceConversion>
         <gamerule.logAdminCommands>true</gamerule.logAdminCommands>
         <gamerule.maxCommandChainLength>65536</gamerule.maxCommandChainLength>
         <gamerule.maxEntityCramming>24</gamerule.maxEntityCramming>
+        <gamerule.mobExplosionDropDecay>true</gamerule.mobExplosionDropDecay>
         <gamerule.mobGriefing>true</gamerule.mobGriefing>
         <gamerule.naturalRegeneration>true</gamerule.naturalRegeneration>
+        <gamerule.playersSleepingPercentage>25</gamerule.playersSleepingPercentage>
         <gamerule.randomTickSpeed>3</gamerule.randomTickSpeed>
         <gamerule.reducedDebugInfo>false</gamerule.reducedDebugInfo>
         <gamerule.sendCommandFeedback>true</gamerule.sendCommandFeedback>
         <gamerule.showDeathMessages>true</gamerule.showDeathMessages>
+        <gamerule.snowAccumulationHeight>1</gamerule.snowAccumulationHeight>
         <gamerule.spawnRadius>10</gamerule.spawnRadius>
         <gamerule.spectatorsGenerateChunks>true</gamerule.spectatorsGenerateChunks>
+        <gamerule.tntExplosionDropDecay>false</gamerule.tntExplosionDropDecay>
         <gamerule.universalAnger>false</gamerule.universalAnger>
-	<gamerule.blockExplosionDropDecay>true</gamerule.blockExplosionDropDecay>
-	<gamerule.doVinesSpread>true</gamerule.doVinesSpread>
-	<gamerule.doWardenSpawning>true</gamerule.doWardenSpawning>
-	<gamerule.enderPearlsVanishOnDeath>true</gamerule.enderPearlsVanishOnDeath>
-	<gamerule.freezeDamage>true</gamerule.freezeDamage>
-	<gamerule.globalSoundEvents>true</gamerule.globalSoundEvents>
-	<gamerule.lavaSourceConversion>false</gamerule.lavaSourceConversion>
-	<gamerule.mobExplosionDropDecay>true</gamerule.mobExplosionDropDecay>
-	<gamerule.playersSleepingPercentage>25</gamerule.playersSleepingPercentage>
-	<gamerule.snowAccumulationHeight>1</gamerule.snowAccumulationHeight>
-	<gamerule.tntExplosionDropDecay>false</gamerule.tntExplosionDropDecay>
-	<gamerule.waterSourceConversion>true</gamerule.waterSourceConversion>
+        <gamerule.waterSourceConversion>true</gamerule.waterSourceConversion>
 
         <github.site.location>${project.version}/${project.artifactId}</github.site.location>
         <mcmeta.description>${project.description}</mcmeta.description>
