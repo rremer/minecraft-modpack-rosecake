@@ -275,6 +275,30 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>journeymap-tools</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/journeymap-tools/files -->
+                                <url>https://mediafilez.forgecdn.net/files/2221/312/journeymaptools-0.3.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>journeymap</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/journeymap/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5272/828/journeymap-1.20.4-5.9.25-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>just-enough-items</id>
                             <goals>
                                 <goal>wget</goal>
