@@ -92,6 +92,18 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>chimes</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/chimes/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5336/433/Chimes-v2.0.2-1.20.4-Fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>trinkets</id>
                             <goals>
                                 <goal>wget</goal>
