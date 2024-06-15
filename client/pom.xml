@@ -48,6 +48,14 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
+                        <id>backpacked</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>trinkets</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
                         <id>journeymap-tools</id>
                         <phase>generate-sources</phase>
                     </execution>

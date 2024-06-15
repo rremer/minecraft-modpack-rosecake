@@ -92,6 +92,31 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>trinkets</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- required by at least backpacked -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/trinkets/files/all -->
+                                <url>https://mediafilez.forgecdn.net/files/5173/502/trinkets-3.8.1.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>backpacked</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/backpacked/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5401/969/backpacked-fabric-1.20.4-3.0.0-beta.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>crystallib</id>
                             <goals>
                                 <goal>wget</goal>
@@ -123,7 +148,7 @@
                             </goals>
                             <phase>none</phase>
                             <configuration>
-                                <!-- dependency of at least goblin-traders -->
+                                <!-- dependency of at least goblin-traders and backpacked -->
                                 <!-- https://www.curseforge.com/minecraft/mc-mods/framework/files -->
                                 <url>https://mediafilez.forgecdn.net/files/5386/325/framework-fabric-1.20.4-0.7.6.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>

@@ -80,6 +80,14 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
+                        <id>trinkets</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
+                        <id>backpacked</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
                         <id>fast-leaf-decay</id>
                         <phase>generate-sources</phase>
                     </execution>
