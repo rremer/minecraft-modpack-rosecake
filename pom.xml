@@ -10,7 +10,7 @@
 
     <groupId>com.github.rremer</groupId>
     <artifactId>minecraft-modpack-rosecake</artifactId>
-    <version>1.20.4-1-SNAPSHOT</version>
+    <version>1.20.4-2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Minecraft Modpack Rosecake</name>
@@ -101,6 +101,31 @@
                                 <!-- https://www.curseforge.com/minecraft/mc-mods/cristel-lib/files -->
                                 <!-- required by at least towns-and-towers -->
                                 <url>https://mediafilez.forgecdn.net/files/5092/563/cristellib-1.2.4-fabric.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>goblin-traders</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/goblin-traders/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5332/896/goblintraders-fabric-1.20.4-1.9.4.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>framework</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- dependency of at least goblin-traders -->
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/framework/files -->
+                                <url>https://mediafilez.forgecdn.net/files/5386/325/framework-fabric-1.20.4-0.7.6.jar</url>
                                 <outputDirectory>${url.mods.target}</outputDirectory>
                             </configuration>
                         </execution>

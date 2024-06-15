@@ -5,12 +5,12 @@
     <parent>
         <groupId>com.github.rremer</groupId>
         <artifactId>minecraft-modpack-rosecake</artifactId>
-        <version>1.20.4-1-SNAPSHOT</version>
+        <version>1.20.4-2-SNAPSHOT</version>
     </parent>
 
     <groupId>com.github.rremer</groupId>
     <artifactId>minecraft-modpack-rosecake-datapack-recipes</artifactId>
-    <version>1.20.4-1-SNAPSHOT</version>
+    <version>1.20.4-2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Minecraft Modpack Rosecake Recipe Datapack</name>
