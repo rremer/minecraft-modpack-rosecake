@@ -48,6 +48,10 @@
                         <phase>generate-sources</phase>
                     </execution>
                     <execution>
+                        <id>cat-jam</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                    <execution>
                         <id>framework</id>
                         <phase>generate-sources</phase>
                     </execution>

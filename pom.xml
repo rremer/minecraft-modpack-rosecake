@@ -92,6 +92,18 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>cat-jam</id>
+                            <goals>
+                                <goal>wget</goal>
+                            </goals>
+                            <phase>none</phase>
+                            <configuration>
+                                <!-- https://www.curseforge.com/minecraft/mc-mods/cat_jam/files -->
+                                <url>https://mediafilez.forgecdn.net/files/4776/161/cat_jam-fabric-mc1.20-1.2.1.jar</url>
+                                <outputDirectory>${url.mods.target}</outputDirectory>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>chimes</id>
                             <goals>
                                 <goal>wget</goal>
